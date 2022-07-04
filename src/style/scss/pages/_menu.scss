@@ -1,0 +1,131 @@
+
+
+
+.lien__icone {
+    width: 18px;
+    margin-right: 5px;
+    font-size: 0.9rem;
+}
+
+
+.item__btn{
+    @extend %button__base;
+    padding-left: 10px;
+}
+
+.return{
+    position: absolute;
+    top: 23px;
+    left: 5%;
+    font-size: 1.3rem;
+}
+
+.band{
+    position: relative;
+}
+
+.menu__title_band{
+    width: 100%;
+    height: 85px;
+    position: absolute;
+    bottom: -46px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: #FAFAFA;
+}
+
+.menu__title{
+    padding: 28.5px 15px;
+    margin: 0;
+    transform-origin: 100% 50%;
+    font-size: 1.7rem;
+    font-weight: 300;
+    text-indent: 3%;
+    font-family: "Shrikhand", cursive;
+}
+
+.menu__container{
+    background-color: #FAFAFA;
+}
+
+
+
+.menu__band{
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.menu__card__title{
+    margin: 40px 20px 25px 30px ;
+    padding-bottom: 5px;
+    font-weight: 300;
+    font-size: 15.5px;
+    border-bottom: solid 3px #99E2D0;
+    width:40px;
+}
+
+.item__description{
+    font-weight: 300;
+    padding: 8px 0 10px 0;
+    font-size: 13.5px;
+}
+
+.item__descr{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+.item__price{
+ font-weight: 500;
+ font-size: 15px;
+ opacity: 0.8;
+ padding: 10px;
+}
+
+
+label > .menu__like{
+    color: grey;
+    position: relative;
+    top: 0px;
+    left: 150px;
+    font-size: 25px;
+}
+
+.heart--full.menu__like {
+    position: relative;
+    top: 0px;
+    left: 119px;
+    color: transparent;
+    font-size: 26px;
+}
+
+
+.menu__order_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__btn--gradient{
+    @extend %gradient_bg;
+   border: 0px;
+   padding:12px 20px;
+   border-radius: 60px;
+   font-size: 14px;
+   font-weight: 700;
+   box-shadow : 0px 5px 10px 0px #c1c1c1;
+   color: white;
+   margin: 30px 15px;
+}
+
+
+ //white-space: nowrap;
+
+// text-overflow: ellipsis;
+// overflow: hidden;

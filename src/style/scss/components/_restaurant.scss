@@ -1,0 +1,119 @@
+// Restaurant navigation
+
+.restaurant{
+    background-color: #FAFAFA;
+}
+.restaurant__container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.restaurant__card{
+    @extend %card
+}
+
+.restaurant__img{
+    
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        min-width: 109px;
+        height: 130px ;
+        width: 100%;
+        margin: 0;
+        object-fit: cover;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+}
+
+//like button
+
+
+.liked__function{
+    display: none;
+}
+label{
+    position: relative;
+    height: 23px;
+    width: 24px;
+    left: -25%;
+    bottom: -60%;
+    cursor: pointer;
+}
+label i {
+    color: grey;
+    position: relative;
+    top: 43px;
+    right: -43px;
+    font-size: 22px;
+}
+
+.heart--full{
+    position: relative;
+    top: 20px;
+    right: -43px;
+    color: transparent;
+    font-size: 23px;
+}
+
+
+
+input:checked + label i {
+    @extend %gradient_font;
+    animation: progress 1.7s linear forwards;
+    .heart--empty{
+        color: transparent;
+    }
+    // animation: progress 0.5s ease 0s;
+    
+}
+
+//keyframes
+
+@keyframes progress{
+    0%{transform: scale3d(0, 0, 1);}
+    33%{transform: scale3d(1, 1, 1);} 
+    38%{transform: scale3d(1, 1, 1);} 
+    43%{transform: scale3d(1, 1, 1);} 
+    48%{transform: scale3d(1, 1, 1);}
+    53%{transform: scale3d(1.4, 1.4, 1);}
+    58%{transform: scale3d(1.05, 1.05, 1);}
+    63%{transform: scale3d(1.2, 1.2, 1);}
+    68%{transform: scale3d(1, 1, 1);}
+    73%{transform: scale3d(1, 1, 1);}
+    78%{transform: scale3d(1, 1, 1);}
+    83%{transform: scale3d(1.4, 1.4, 1);}
+    88%{transform: scale3d(1.05, 1.05, 1);}
+    95%{transform: scale3d(1.2, 1.2, 1);}
+    100%{transform: scale3d(1, 1, 1);}
+}
+
+
+
+
+
+.restaurant__location{
+    font-weight: 100;
+    padding: 5px 0 0 5px;
+}
+h3{
+    font-weight: 500;
+    font-size: 1.1em;
+    padding: 13px 0 0 5px;
+}
+
+
+.restaurant__newticker{
+    color: $color-third-low;
+    background-color: $color-third;
+    position: absolute;
+    right: 15px;
+    top:15px;
+    padding: 6px;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+

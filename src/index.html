@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style\index.css" type="text/css">
+    <title>Acceuil</title>
+
+</head>
+<body>
+    <div class="loader__container">
+        <div class="loader__circle__container">
+            <div class="loader__circle1"></div>
+            <div class="loader__circle2"></div>
+            <div class="loader__circle3"></div>
+            <div class="loader__logo">ohmyfood</div>
+        </div>
+        
+    </div>
+
+
+
+    <header>
+        <div class="header">
+            <img src="assets\ohmyfood.png" alt="logo" class="header__logo">
+        </div>
+    </header>
+    <main>
+
+        <section class="homepage">
+            <form action="search">
+                <input type="text" placeholder="Paris, Belleville" class="homepage__searchbar">
+                <span class="recherche__archer"><i class="fas fa-map-marker-alt locate" aria-hidden="true"></i></span>
+            </form>
+            <h1 class="homepage__title">Réservez le menu qui vous convient</h1>
+            <p class="homepage__subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+            
+            <button class="homepage__btn--gradient"><a href="#">Explorer nos restaurant</a></button> 
+            
+        </section>
+        <section class="process">
+            <h2 class="process__title"> Fonctionnement </h2>
+            <div class="process__container">
+                <button class="process__btn" >
+                    <span class="process__number"> 1 </span>
+                    <i class="fas fa-mobile-alt process__icon" aria-hidden="true"></i>
+                   
+                    Choisissez un restaurant
+                
+                </button>
+
+                <button class="process__btn" >
+                    <span class="process__number"> 2 </span>
+                    <i class="fas fa-list-ul process__icon" aria-hidden="true"></i>
+                    Composez votre menu
+                
+                </button>
+
+                <button class="process__btn" >
+                    <span class="process__number"> 3 </span>
+                    <i class="fas fa-store process__icon" aria-hidden="true"></i>
+                    
+                    Dégustez au restaurant
+                
+                
+                </button>
+            </div>
+        </section>
+        <section class="restaurant">
+            <h2 class="restaurant__title">Restaurants</h2>
+            
+            <div class="restaurant__container">
+                
+                
+                
+                <a class="restaurant__card" href="menu1.html">
+                    <span class="restaurant__newticker"> Nouveau</span>
+                    <img src="assets\resto1.jpg" class="restaurant__img"alt="resto1">
+                    <h3>La pallette du gout</h3>
+                    <p class="restaurant__location">Ménilmontant</p>
+                    <input type="checkbox" id= "liked_rest1" class="liked__function">
+                    <label for="liked_rest1" class="liked__checkbox">
+                        <i class="far fa-heart heart--empty" aria-hidden="true"></i>
+                        <i class=" fas fa-heart heart--full"></i></span> 
+                    </label>
+                </a>
+                
+
+
+
+
+                <div class="restaurant__card"> 
+                    <span class="restaurant__newticker"> Nouveau</span>
+                    <img src="assets\resto2.jpg" class="restaurant__img"alt="resto1">
+                    <h3>La note enchantée</h3>
+                    <p class="restaurant__location" >Charonne</p>
+                    <input type="checkbox" id= "liked_rest2" class="liked__function">
+                    <label for="liked_rest2" class="liked__checkbox">
+                        <i class="far fa-heart heart--empty" aria-hidden="true"></i>
+                        <i class=" fas fa-heart heart--full"></i></span> 
+                    </label>
+                   
+
+                </div>
+                <div class="restaurant__card">
+                    <img src="assets\resto3.jpg" class="restaurant__img"alt="resto1">
+                    <h3>A la française</h3>
+                    <p class="restaurant__location">Cité Rouge</p>
+                    <input type="checkbox" id= "liked_rest3" class="liked__function">
+                    <label for="liked_rest3" class="liked__checkbox">
+                        <i class="far fa-heart heart--empty" aria-hidden="true"></i>
+                        <i class=" fas fa-heart heart--full"></i></span> 
+                    </label>
+                </div>
+                <div class="restaurant__card">
+                    <img src="assets\resto4.jpg" class="restaurant__img"alt="resto1">
+                    <h3>Le délice des sens</h3>
+                    <p class="restaurant__location">Folie-Méricourt</p>
+                    
+                    <input type="checkbox" id= "liked_rest4" class="liked__function">
+                    <label for="liked_rest4" class="liked__checkbox">
+                        <i class="far fa-heart heart--empty" aria-hidden="true"></i>
+                        <i class=" fas fa-heart heart--full"></i></span> 
+                    </label>
+                </div>
+
+               
+            
+            </div>
+        </section>
+    </main>
+    <footer class='foot'>
+
+        <h4 class='footer__title'>ohmyfood</h4>
+
+        <ul class='pied__liste'>
+
+            <li class='pied__liste--element'>
+
+                <a href='#' class="links"><i class="fas fa-utensils lien__icone"></i>Proposer un restaurant</a>
+            </li>
+
+            <li class='pied__liste--element'>
+
+                <a href='#' class='links'><i class="fas fa-hands-helping lien__icone"></i>Devenir partenaire</a>
+            </li>
+
+            <li class='pied__liste--element'>
+
+                <a href='mentions-legales/mentions-legales-site-internet.pdf' class='links'>Mentions légales</a>
+            </li>
+
+            <li class='pied__liste--element'>
+
+        
+                <a href='mailto:contact@ohmyfood.fr' class='links'>Contact</a>
+            </li>
+        </ul>
+    </footer>
+    <script src="https://kit.fontawesome.com/c1d244d3fe.js" crossorigin="anonymous" async></script>
+</body>
+</html>
