@@ -21,10 +21,10 @@
         <img src="assets\resto1.jpg" alt="menu1" class="menu__band">    
 
         <div class="menu__title_band">
-            <h2 class="menu__title">
+            <h2 class="restaurant__title">
                 La palette du goût
-                <input type="checkbox" id= "liked_rest1" class="liked__function">
-                <label for="liked_rest1" class="liked__checkbox">
+                <input type="checkbox" id= "liked_menu1" class="liked__function">
+                <label for="liked_menu1" class="liked__checkbox">
                     <i class="far fa-heart heart--empty menu__like" aria-hidden="true"></i>
                     <i class="fas fa-heart heart--full menu__like"></i></span> 
                 </label>
@@ -40,93 +40,227 @@
 
 <div class="menu__container">
 
+ <!-- formulaire choix de plats -->
+ <form class='menu__form'>
 
-    <div class="entry__card">
-        <h3 class="menu__card__title">ENTREES</h3>
+    <!-- titre des entrées -->
+    <h3 class="menu__title">entrées<span class="menu__title--underline"></span></h3> 
 
+    <!-- groupe des entrées -->
+    <fieldset class="menu__select">
 
-        <div class="item__btn">
-                <h3>Fricassée d'escargot</h3>
-            <div class="item__descr">
-                <p class="item__description">
-                        Au piment d'Espelette 
-                        <p class="item__price">25€</p> 
-                </p>
-            </div>
+        <!-- entrée 1 -->
+        <div class="menu__starter__choice">
+
+            <!-- selection choix -->
+            <input type="checkbox" name='menu_a_la_française' id='entrée1' class='selection'>
+            <label for='entrée1' class='item__btn starter__one'>
+
+                <!-- description entrée -->
+                <span class="item__description">
+                    <span class='item__title' title="Tartare de poulpe acidulé">Tartare de poulpe acidulé</span>
+                    <span class='item__title' title="Aux zestes d'orange">Aux zestes d'orange</span>
+                </span>
+                <span class='item__price'>25€</span>
+
+                <!-- validation -->
+                <span class="item__selected">
+                    <i class="fas fa-check-circle item__selected--icon"></i>
+                </span>
+            </label>
         </div>
 
-        <div class="item__btn">
-                <h3>Foie gras de canard mi-cuit</h3>
-            <p class="item__description">
-                    Et ses copeaux de truffe noire
-                    <span class="item__price">35€</span>
-            </p>
+        <!-- entrée 2 -->
+        <div class="menu__starter__choice">
+
+            <!-- selection choix -->
+            <input type="checkbox" name='menu_a_la_française' id='entrée2' class='selection'>
+            <label for='entrée2' class='item__btn starter__two'>
+
+                <!-- description entrée -->
+                <span class="item__description">
+                    <span class='item__title' title="Velouté de légumes d'antan">Velouté de légumes d'antan</span>
+                    <span class='item__title' title="Carotte, panais, topinambour">Carotte, panais, topinambour</span>
+                </span>
+                <span class='item__price'>35€</span>
+
+                <!-- validation -->
+                <span class="item__selected">
+                    <i class="fas fa-check-circle item__selected--icon"></i>
+                </span>
+            </label>
         </div>
 
-        <div class="item__btn">
-                <h3>Oeuf au plat</h3>
-            <p class="item__description">
-                    Assaisonné à la truffe sur lit de caviar
-                    <span class="item__price">20€</span>
-            </p>
+        <!-- entrée 3 -->
+        <div class="menu__starter__choice">
+
+            <!-- selection choix -->
+            <input type="checkbox" name='menu_a_la_française' id='entrée3' class='selection'>
+            <label for='entrée3' class='item__btn starter__three'>
+
+                <!-- description entrée -->
+                <span class="item__description">
+                    <span class='item__title' title="Soupe à l'oignon">Soupe à l'oignon</span>
+                    <span class='item__title' title="Revisitée">Revisitée</span>
+                </span>
+                <span class='item__price'>20€</span>
+
+                <!-- validation -->
+                <span class="item__selected">
+                    <i class="fas fa-check-circle item__selected--icon"></i>
+                </span>
+            </label>
+        </div>
+
+    </fieldset>
+    
+    <!-- titre des plats -->
+    <h3 class="menu__title">plats<span class="menu__title--underline"></span></h3>
+
+    <!-- groupe des plats -->
+    <fieldset class="menu__select">
+
+        <!-- plat 1 -->
+        <div class="menu__plates__choice">
+
+            <!-- selection choix -->
+            <input type="checkbox" name='menu_a_la_française' id='plat1' class='selection'>
+            <label for='plat1' class='item__btn starter__one'>
+
+                <!-- description plat -->
+                <span class="item__description">
+                    <span class='item__title' title="Coquilles Saint-Jacques">Coquilles Saint-Jacques</span>
+                    <span class='item__title' title="Accompagnées d'une purée de panais">Accompagnées d'une purée de panais</span>
+                </span>
+                <span class='item__price'>40€</span>
+
+                <!-- validation -->
+                <span class="item__selected">
+                    <i class="fas fa-check-circle item__selected--icon"></i>
+                </span>
+            </label>
+        </div>
+
+        <!-- plat 2 -->
+        <div class="menu__plates__choice">
+
+            <!-- selection choix -->
+            <input type="checkbox" name='menu_a_la_française' id='plat2' class='selection'>
+            <label for='plat2' class='item__btn starter__two'>
+
+                <!-- description plat -->
+                <span class="item__description">
+                    <span class='item__title' title="Magret de canard">Magret de canard</span>
+                    <span class='item__title' title="Et parmentier de pommes de terre">Et parmentier de pommes de terre</span>
+                </span>
+                <span class='item__price'>35€</span>
+
+                <!-- validation -->
+                <span class="item__selected">
+                    <i class="fas fa-check-circle item__selected--icon"></i>
+                </span>
+            </label>
+        </div>
+
+        <!-- plat 3 -->
+        <div class="menu__plates__choice">
+
+            <!-- selection choix -->
+            <input type="checkbox" name='menu_a_la_française' id='plat3' class='selection'>
+            <label for='plat3' class='item__btn starter__three'>
+
+                <!-- description plat -->
+                <span class="item__description">
+                    <span class='item__title' title="Pigeonneau d’Ille-et-Vilaine">Pigeonneau d’Ille-et-Vilaine</span>
+                    <span class='item__title' title="Sur son lit de gnocchis aux légumes">Sur son lit de gnocchis aux légumes</span>
+                </span>
+                <span class='item__price'>44€</span>
+
+                <!-- validation -->
+                <span class="item__selected">
+                    <i class="fas fa-check-circle item__selected--icon"></i>
+                </span>
+            </label>
+        </div>
+    </fieldset>
+
+    <!-- titre des desserts -->
+    <h3 class="menu__title">desserts<span class="menu__title--underline"></span></h3>
+
+    <!-- groupe des desserts -->
+    <fieldset class='menu__select'>
+
+        <!-- dessert 1 -->
+        <div class="menu__dessert__choice">
+
+            <!-- selection choix -->
+            <input type="checkbox" name='menu_a_la_française' id='dessert1' class='selection'>
+            <label for='dessert1' class='item__btn starter__one'>
+
+                <!-- description dessert -->
+                <span class="item__description">
+                    <span class='item__title' title="Pétales de violettes glacés">Pétales de violettes glacés</span>
+                    <span class='item__title' title="Et purée de noisettes">Et purée de noisettes</span>
+                </span>
+                <span class='item__price'>18€</span>
+
+                <!-- validation -->
+                <span class="item__selected">
+                    <i class="fas fa-check-circle item__selected--icon"></i>
+                </span>
+            </label>
+        </div>
+
+        <!-- dessert 2 -->
+        <div class="menu__dessert__choice">
+
+            <!-- selection choix -->
+            <input type="checkbox" name='menu_a_la_française' id='dessert2' class='selection'>
+            <label for='dessert2' class='item__btn starter__two'>
+
+                <!-- description dessert -->
+                <span class="item__description">
+                    <span class='item__title' title="Fondant au chocolat">Fondant au chocolat</span>
+                    <span class='item__title' title="Revisité">Revisité</span>
+                </span>
+                <span class='item__price'>22€</span>
+
+                <!-- validation -->
+                <span class="item__selected">
+                    <i class="fas fa-check-circle item__selected--icon"></i>
+                </span>
+            </label>
+        </div>
+
+        <!-- dessert 3 -->
+        <div class="menu__dessert__choice">
+
+            <!-- selection choix -->
+            <input type="checkbox" name='menu_a_la_française' id='dessert3' class='selection'>
+            <label for='dessert3' class='item__btn starter__three'>
+
+                <!-- description dessert -->
+                <span class="item__description">
+                    <span class='item__title' title="Millefeuille croustillant">Millefeuille croustillant</span>
+                    <span class='item__title' title="Myrtilles et pâte d’amande">Myrtilles et pâte d’amande</span>
+                </span>
+                <span class='item__price'>23€</span>
+
+                <!-- validation -->
+                <span class="item__selected">
+                    <i class="fas fa-check-circle item__selected--icon"></i>
+                </span>
+            </label>
+        </div>
+    </fieldset>
+</form>
+    
+        <div class="menu__order_button">
+            <a href="#"><button class="menu__btn--gradient">Commander</button></a> 
         </div>
     </div>
-    <h3 class="menu__card__title">PLATS</h3>
-    <div class="item__btn">
-            <h3>Filet de boeuf aux herbes</h3>
-           <p class="item__description">
-                Accompagné de sa ribambelle de légum...
-                <span class="item__price">40€</span>
-           </p>
-    </div>
- 
-    <div class="item__btn">
-            <h3>Parmentier de queue de boeuf</h3>
-           <p class="item__description">
-                À la truffe noire sur sa purée de panais
-                <span class="item__price">35€</span>
-           </p>
 
-    </div> 
-    <div class="item__btn">
-            <h3>Filet de turbot</h3>
-           <p class="item__description">
-                Aux agrumes
-                <span class="item__price">44€</span>
-           </p>
-    </div>
-
-    <h3 class="menu__card__title">DESSERTS</h3>
-
-    <div class="item__btn">
-            <h3>Paris-Brest</h3>
-           <p class="item__description">
-                Revisité
-                <span class="item__price">18€</span>
-           </p>
-    </div>
-
-    <div class="item__btn">
-            <h3>Macaron au chocolat d'exception </h3>
-            <p class="item__description">
-                Et glace à la vanille de Madagascar
-                <span class="item__price">22€</span>
-            </p>
-    </div>
-
-    <div class="item__btn">
-            <h3>Mousse au chocolat </h3>
-            <p class="item__description">
-                Au piment d'Espelette et à la truffe noire
-               <span class="item__price">23€</span> 
-            </p> 
-    </div>
-
-    <div class="menu__order_button">
-        <a href="#"><button class="menu__btn--gradient">Commander</button></a> 
-    </div>
-</div>
-
+</p>   
     <footer class='foot'>
 
         <h4 class='footer__title'>ohmyfood</h4>

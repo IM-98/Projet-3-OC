@@ -33,7 +33,7 @@
 .liked__function{
     display: none;
 }
-label{
+.liked__checkbox{
     position: relative;
     height: 23px;
     width: 24px;
@@ -41,7 +41,7 @@ label{
     bottom: -60%;
     cursor: pointer;
 }
-label i {
+.liked__checkbox i {
     color: grey;
     position: relative;
     top: 43px;
@@ -49,7 +49,7 @@ label i {
     font-size: 22px;
 }
 
-.heart--full{
+.liked__checkbox .heart--full{
     position: relative;
     top: 20px;
     right: -43px;
@@ -59,7 +59,7 @@ label i {
 
 
 
-input:checked + label i {
+input:checked + .liked__checkbox i {
     @extend %gradient_font;
     animation: progress 1.7s linear forwards;
     .heart--empty{
