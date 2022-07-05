@@ -4,7 +4,7 @@
   background: linear-gradient(#FF79DA, #9356DC);
 }
 
-input:checked + .liked__checkbox i {
+input:checked + .liked__checkbox--menu i, input:checked + .liked__checkbox i {
   background-image: linear-gradient(#FF79DA, #9356DC);
   background-clip: text;
   color: transparent;
@@ -196,6 +196,7 @@ html {
   font-size: 14px;
   font-weight: 700;
   box-shadow: 0px 5px 10px 0px #c1c1c1;
+  cursor: pointer;
 }
 .homepage__btn--gradient a {
   color: white;
@@ -268,26 +269,23 @@ h2 {
 }
 
 .liked__checkbox {
-  position: relative;
+  position: absolute;
   height: 23px;
   width: 24px;
-  left: -25%;
-  bottom: -60%;
+  right: 2%;
+  bottom: 5%;
   cursor: pointer;
 }
 
 .liked__checkbox i {
   color: grey;
   position: relative;
-  top: 43px;
-  right: -43px;
   font-size: 22px;
 }
 
-.liked__checkbox .heart--full {
-  position: relative;
-  top: 20px;
-  right: -43px;
+.liked__checkbox > .heart--full {
+  position: absolute;
+  right: 2%;
   color: transparent;
   font-size: 23px;
 }
@@ -297,6 +295,12 @@ input:checked + .liked__checkbox i {
 }
 input:checked + .liked__checkbox i .heart--empty {
   color: transparent;
+}
+
+.like__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes progress {
@@ -381,6 +385,8 @@ h3 {
 }
 
 .menu__title_band {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 85px;
   position: absolute;
@@ -390,7 +396,7 @@ h3 {
   background-color: #FAFAFA;
 }
 
-.restaurant__title {
+.restaurant__title--menu {
   padding: 28.5px 15px;
   margin: 0;
   transform-origin: 100% 50%;
@@ -444,48 +450,7 @@ body {
   color: unset;
 }
 
-@media screen and (min-width: 1024px) {
-  ::selection {
-    background-color: #FF79DA;
-    color: #99E2D0;
-  }
-}
 /* animation menu miroir restaurants */
-@keyframes flou {
-  0% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 0;
-  }
-  60% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@media screen and (min-width: 1024px) {
-  @keyframes détend {
-    0% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(7.5px);
-    }
-    100% {
-      transform: translateY(0px);
-    }
-  }
-}
-@keyframes tour {
-  0% {
-    transform: rotateZ(0deg);
-  }
-  100% {
-    transform: rotateZ(360deg);
-  }
-}
 /* menu des repas */
 .menu__form {
   margin: 25px 0 0 0;
@@ -512,13 +477,6 @@ body {
   /* barre sous les titres */
 }
 
-@media screen and (min-width: 1024px) {
-  .menu__title {
-    width: 80vw;
-    max-width: 80vw;
-    left: 10%;
-  }
-}
 .menu__title--underline {
   width: 100%;
   max-width: 100px;
@@ -530,22 +488,6 @@ body {
   transform: scaleX(0.5);
 }
 
-@media screen and (min-width: 1024px) {
-  .menu__title--underline {
-    width: 80vw;
-    max-width: 80vw;
-    transform: scaleX(1);
-  }
-}
-.menu__title:hover .menu__title--underline {
-  animation: détend 0.6s ease-out;
-}
-
-@media screen and (min-width: 1024px) {
-  .menu__title:hover .menu__title--underline {
-    animation: détend 0.3s linear;
-  }
-}
 .menu__select {
   height: 250px;
   min-height: 250px;
@@ -557,26 +499,6 @@ body {
   /* type d'entrée */
 }
 
-@media screen and (min-width: 1024px) {
-  .menu__select {
-    height: 85px;
-    min-height: unset;
-  }
-}
-.repas__entrée--quatrechoix {
-  height: 320px;
-}
-
-@media screen and (min-width: 1024px) {
-  .repas__entrée--quatrechoix {
-    height: 170px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .menu__starter__choice {
-    width: 30vw;
-  }
-}
 .repas__entrée--choix:nth-child(1) {
   animation: colle 1.5s ease-in-out forwards;
 }
@@ -602,16 +524,6 @@ body {
   /* type de plat */
 }
 
-@media screen and (min-width: 1024px) {
-  .menu__plates {
-    height: 85px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .menu__plates__choice {
-    width: 30vw;
-  }
-}
 .menu__plates__choice:nth-child(1) {
   animation: colle 1.5s ease-in-out forwards;
 }
@@ -633,16 +545,6 @@ body {
   /* type des desserts */
 }
 
-@media screen and (min-width: 1024px) {
-  .repas__dessert {
-    height: 85px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .menu__dessert__choice {
-    width: 30vw;
-  }
-}
 .menu__dessert__choice:nth-child(1) {
   animation: colle 1.5s ease-in-out forwards;
 }
@@ -765,44 +667,30 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 1023px) {
-  .selection:hover + .item__btn .item__selected {
-    min-width: 60px;
-    background-color: #99E2D0;
-  }
-  .selection:checked + .item__btn .item__selected {
-    min-width: 60px;
-    background-color: #99E2D0;
-  }
-  .selection:not(:checked) + .item__btn .item__selected {
-    min-width: 0px;
-    background-color: #99E2D0;
-  }
-  .selection:checked + .item__btn .item__selected--icon {
-    animation: tour 0.4s linear forwards;
-  }
+.liked__checkbox--menu {
+  position: absolute;
+  height: 23px;
+  width: 24px;
+  right: 2%;
+  bottom: 5%;
+  cursor: pointer;
 }
-@media screen and (min-width: 1024px) {
-  .selection:checked + .item__btn .item__selected {
-    min-width: 60px;
-    background-color: #99E2D0;
-  }
-  .selection:not(:checked) + .item__btn:hover .item__selected--icon {
-    animation: tour 0.4s linear forwards;
-  }
+
+input:checked + .liked__checkbox--menu i {
+  animation: progress 1.7s linear forwards;
 }
+input:checked + .liked__checkbox--menu i .heart--empty {
+  color: transparent;
+}
+
 label > .menu__like {
-  color: grey;
-  position: relative;
-  top: 0px;
-  left: 150px;
+  position: absolute;
+  right: 30%;
+  bottom: 100%;
   font-size: 25px;
 }
 
-.heart--full.menu__like {
-  position: relative;
-  top: 0px;
-  left: 119px;
+.heart--full {
   color: transparent;
   font-size: 26px;
 }
@@ -830,6 +718,127 @@ label > .menu__like {
   font-size: 0.9rem;
 }
 
+@keyframes flou {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tour {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@media screen and (max-width: 1023px) {
+  .selection:hover + .item__btn .item__selected {
+    min-width: 60px;
+    background-color: #99E2D0;
+  }
+  .selection:checked + .item__btn .item__selected {
+    min-width: 60px;
+    background-color: #99E2D0;
+  }
+  .selection:not(:checked) + .item__btn .item__selected {
+    min-width: 0px;
+    background-color: #99E2D0;
+  }
+  .selection:checked + .item__btn .item__selected--icon {
+    animation: tour 0.4s linear forwards;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .selection:checked + .item__btn .item__selected {
+    min-width: 60px;
+    background-color: #99E2D0;
+  }
+  .selection:not(:checked) + .item__btn:hover .item__selected--icon {
+    animation: tour 0.4s linear forwards;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .repas__dessert {
+    height: 85px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu__dessert__choice {
+    width: 30vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu__plates {
+    height: 85px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu__plates__choice {
+    width: 30vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu__select {
+    height: 85px;
+    min-height: unset;
+  }
+}
+.repas__entrée--quatrechoix {
+  height: 320px;
+}
+
+@media screen and (min-width: 1024px) {
+  .repas__entrée--quatrechoix {
+    height: 170px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu__starter__choice {
+    width: 30vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu__title--underline {
+    width: 80vw;
+    max-width: 80vw;
+    transform: scaleX(1);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu__title {
+    width: 80vw;
+    max-width: 80vw;
+    left: 10%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  ::selection {
+    background-color: #FF79DA;
+    color: #99E2D0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  @keyframes détend {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(7.5px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+}
 .foot {
   color: #FFF;
   background-color: #363636;
