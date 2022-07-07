@@ -7,6 +7,7 @@
 input:checked + .liked__checkbox--menu i, input:checked + .liked__checkbox i {
   background-image: linear-gradient(#FF79DA, #9356DC);
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
 }
 

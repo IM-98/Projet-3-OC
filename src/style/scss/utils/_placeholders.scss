@@ -5,6 +5,7 @@
 %gradient_font{
     background-image: linear-gradient($color-secondary,$color-primary);
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
 }
 
