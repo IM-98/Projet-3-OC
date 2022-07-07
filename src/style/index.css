@@ -373,6 +373,21 @@ h3 {
   font-weight: 500;
 }
 
+@media screen and (min-width: 1024px) {
+  .restaurant__container {
+    margin: 0 15px 30px 15px;
+  }
+  .process__container {
+    flex-flow: row nowrap;
+    margin: 0 15px;
+  }
+  .restaurant__card {
+    width: 45%;
+  }
+  .process__btn {
+    margin: 15px;
+  }
+}
 .return {
   position: absolute;
   top: 23px;
@@ -464,12 +479,7 @@ body {
 }
 
 .menu__title {
-  height: 30px;
-  min-width: 80px;
-  max-width: 200px;
-  position: relative;
-  left: 5%;
-  margin: 0;
+  margin: 0 50px;
   padding: 40px 0 0 0;
   font-size: 0.95rem;
   font-weight: 400;
@@ -488,9 +498,11 @@ body {
   transform: scaleX(0.5);
 }
 
+.menu__dessert__choice, .menu__starter__choice, .menu__plates__choice {
+  margin: 10px 0;
+}
+
 .menu__select {
-  height: 250px;
-  min-height: 250px;
   margin: 0 0 0 0;
   padding: 5px 0 0 0;
   opacity: 0;
@@ -788,8 +800,7 @@ label > .menu__like {
 }
 @media screen and (min-width: 1024px) {
   .menu__select {
-    height: 85px;
-    min-height: unset;
+    margin: 0 40px;
   }
 }
 .repas__entrée--quatrechoix {
@@ -807,17 +818,9 @@ label > .menu__like {
   }
 }
 @media screen and (min-width: 1024px) {
-  .menu__title--underline {
-    width: 80vw;
-    max-width: 80vw;
-    transform: scaleX(1);
-  }
-}
-@media screen and (min-width: 1024px) {
   .menu__title {
     width: 80vw;
     max-width: 80vw;
-    left: 10%;
   }
 }
 @media screen and (min-width: 1024px) {
