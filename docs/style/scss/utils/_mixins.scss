@@ -1,0 +1,8 @@
+@mixin position($position, $left, $top, $x, $y ) {
+    
+    position: $position;
+    left:$left;
+    top:$top;
+    transform: translate($x,$y);
+
+}

@@ -1,0 +1,485 @@
+
+.return{
+    position: absolute;
+    top: 23px;
+    left: 5%;
+    font-size: 1.3rem;
+}
+
+.band{
+    position: relative;
+}
+
+.menu__title_band{
+    display: flex ;
+    flex-direction: column;
+    width: 100%;
+    height: 85px;
+    position: absolute;
+    bottom: -46px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: #FAFAFA;
+}
+
+.restaurant__title--menu{
+    padding: 28.5px 15px;
+    margin: 0;
+    transform-origin: 100% 50%;
+    font-size: 1.7rem;
+    font-weight: 300;
+    text-indent: 3%;
+    font-family: "Shrikhand", cursive;
+}
+
+.menu__container{
+    background-color: #FAFAFA;
+}
+
+
+
+.menu__band{
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+
+  /* formulaire repas */
+  .menu__select {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    border: none;
+  }
+  
+  .menu__dessert__choice, .menu__plates__choice, .menu__starter__choice {
+    width: 93vw;
+    height: 68px;
+    display: flex;
+    transform: translateY(10px);
+  }
+  
+  /* box-shadow */
+  /* corp de la page */
+  body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #FAFAFA;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  /* selection texte */
+  ::selection {
+    background-color: unset;
+    color: unset;
+  }
+  
+
+  
+  
+  /* animation menu miroir restaurants */
+
+ 
+
+  
+  
+  
+  /* menu des repas */
+  .menu__form {
+    margin: 25px 0 0 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    animation: flou 2s linear 0s forwards;
+    /* titre des zones de repas */
+    /* zone des entrées */
+    /* zone des plats */
+    /* zone des desserts */
+  }
+  .menu__title {
+    margin: 0 50px;
+    padding: 40px 0 0 0;
+    font-size: 0.95rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    /* barre sous les titres */
+  }
+
+  .menu__title--underline {
+    width: 100%;
+    max-width: 100px;
+    height: 2.5px;
+    display: block;
+    margin-top: 5px;
+    background-color: #99E2D0;
+    transform-origin: 0% 50%;
+    transform: scaleX(0.5);
+  }
+
+  .menu__dessert__choice, .menu__starter__choice, .menu__plates__choice{
+    margin: 10px 0;
+  }
+
+  .menu__select{
+    margin: 0 0 0 0;
+    padding: 5px 0 0 0;
+    opacity: 0;
+    animation: flou 1.3s linear forwards;
+    /* zone pour 4 choix */
+    /* type d'entrée */
+  }
+
+  .repas__entrée--choix:nth-child(1) {
+    animation: colle 1.5s ease-in-out forwards;
+  }
+  .repas__entrée--choix:nth-child(2) {
+    animation: colle 1.5s ease-in-out 0.1s forwards;
+  }
+  .repas__entrée--choix:nth-child(3) {
+    animation: colle 1.5s ease-in-out 0.2s forwards;
+  }
+  .repas__entrée--choix:nth-child(4) {
+    animation: colle 1.5s ease-in-out 0.3s forwards;
+  }
+  .menu__plates {
+    height: 250px;
+    margin: 0 0 0 0;
+    padding: 5px 0 0 0;
+    opacity: 0;
+    animation: flou 1.3s linear forwards;
+    /* type de plat */
+  }
+
+  .menu__plates__choice:nth-child(1) {
+    animation: colle 1.5s ease-in-out forwards;
+  }
+  .menu__plates__choice:nth-child(2) {
+    animation: colle 1.5s ease-in-out 0.1s forwards;
+  }
+  .menu__plates__choice:nth-child(3) {
+    animation: colle 1.5s ease-in-out 0.2s forwards;
+  }
+  .repas__dessert {
+    height: 250px;
+    margin: 0 0 0 0;
+    padding: 5px 0 0 0;
+    opacity: 0;
+    animation: flou 1.3s linear forwards;
+    /* type des desserts */
+  }
+
+  .menu__dessert__choice:nth-child(1) {
+    animation: colle 1.5s ease-in-out forwards;
+  }
+  .menu__dessert__choice:nth-child(2) {
+    animation: colle 1.5s ease-in-out 0.1s forwards;
+  }
+  .menu__dessert__choice:nth-child(3) {
+    animation: colle 1.5s ease-in-out 0.2s forwards;
+  }
+  
+  /* zone chaque assiette */
+  .item__btn {
+    width: 93vw;
+    height: 68px;
+    display: flex;
+    justify-content: stretch;
+    /* start/center décale la div validé */
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 0px #b4b4b4;
+    background-color: #FFF;
+    overflow: hidden;
+    /* nom de l'assiette */
+    /* prix de l'assiette */
+    /* zone validation choix assiette */
+  }
+  .starter__one {
+    opacity: 0;
+    animation: flou 0.6s linear 0.8s forwards;
+  }
+  .starter__two {
+    opacity: 0;
+    animation: flou 0.6s linear 0.9s forwards;
+  }
+  .starter__three {
+    opacity: 0;
+    animation: flou 0.6s linear 1s forwards;
+  }
+  .starter__four {
+    opacity: 0;
+    animation: flou 0.6s linear 1s forwards;
+  }
+
+  .item__description {
+    min-width: 60%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    text-indent: 10px;
+    flex: 1;
+    /* texte accompagnant du menu */
+  }
+  .item__title {
+    width: 100%;
+    width: 100%;
+    display: block;
+    margin: -10px 0 0 0;
+    font-size: 0.9rem;
+    font-weight: 300;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .item__title:first-of-type {
+    height: 24px;
+    margin: 12px 0 0 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  .item__price{
+    height: 32px;
+    width: 45px;
+    padding-left: 0px;
+    margin: 36px 3px 0 3px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.4s linear;
+  }
+  .item__selected {
+    width: 0px;
+    min-width: 0px;
+    height: 68px;
+    display: flex;
+    flex: 0;
+    justify-content: center;
+    position: relative;
+    left: 1px;
+    /* évite un escalier de l'animation */
+    background-color: #c1ede2;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transform-origin: 100% 50%;
+    transition: all 0.4s linear;
+  }
+  .item__selected--icon {
+    position: absolute;
+    left: 20px;
+    margin: 24px 0 24px 0;
+    font-size: 1.25rem;
+    color: #FFF;
+  }
+  .item__btn:hover > .item__selected {
+    min-width: 60px;
+  }
+  
+  /* selection choix assiette */
+  .selection {
+    display: none;
+  }
+
+  .liked__checkbox--menu{
+    position: absolute;
+    height: 23px;
+    width: 24px;
+    right: 2%;
+    bottom: 5%;
+    cursor: pointer;
+}
+
+input:checked + .liked__checkbox--menu i {
+  @extend %gradient_font;
+  animation: progress 1.7s linear forwards;
+  .heart--empty{
+      color: transparent;
+  }
+  // animation: progress 0.5s ease 0s;
+  
+}
+
+
+
+
+label > .menu__like{
+    
+    position: absolute;
+    right: 30%;
+    bottom: 100%;
+    font-size: 25px;
+}
+
+// .heart--full{
+//   color: transparent;
+// }
+
+
+.heart--full {
+  
+    color: transparent;
+    font-size: 26px;
+}
+
+
+.menu__order_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__btn--gradient{
+    @extend %gradient_bg;
+   border: 0px;
+   padding:12px 20px;
+   border-radius: 60px;
+   font-size: 14px;
+   font-weight: 700;
+   box-shadow : 0px 5px 10px 0px #c1c1c1;
+   color: white;
+   margin: 30px 15px;
+}
+
+.lien__icone {
+    width: 18px;
+    margin-right: 5px;
+    font-size: 0.9rem;
+}
+
+// keyframes
+
+@keyframes flou {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes tour {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+
+
+
+
+
+
+//media querries
+
+@media screen and (max-width: 1023px) {
+  .selection:hover + .item__btn .item__selected {
+    min-width: 60px;
+    background-color: #99E2D0;
+  }
+  .selection:checked + .item__btn .item__selected {
+    min-width: 60px;
+    background-color: #99E2D0;
+  }
+  .selection:not(:checked) + .item__btn .item__selected {
+    min-width: 0px;
+    background-color: #99E2D0;
+  }
+  .selection:checked + .item__btn .item__selected--icon {
+    animation: tour 0.4s linear forwards;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .selection:checked + .item__btn .item__selected {
+    min-width: 60px;
+    background-color: #99E2D0;
+  }
+  .selection:not(:checked) + .item__btn:hover .item__selected--icon {
+    animation: tour 0.4s linear forwards;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .repas__dessert {
+    height: 85px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu__dessert__choice {
+    width: 30vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu__plates {
+    height: 85px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu__plates__choice {
+    width: 30vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu__select {
+  
+    margin: 0 40px;
+  }
+}
+.repas__entrée--quatrechoix {
+  height: 320px;
+}
+@media screen and (min-width: 1024px) {
+  .repas__entrée--quatrechoix {
+    height: 170px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu__starter__choice {
+    width: 30vw;
+  }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+  .menu__title {
+    width: 80vw;
+    max-width: 80vw;
+    // left: 10%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  ::selection {
+    background-color: #FF79DA;
+    color: #99E2D0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  @keyframes détend {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(7.5px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+}
