@@ -305,12 +305,6 @@ input:checked + .liked__checkbox i .heart--empty {
   color: transparent;
 }
 
-.like__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 @keyframes progress {
   0% {
     transform: scale3d(0, 0, 1);
@@ -811,12 +805,12 @@ label > .menu__like {
     margin: 0 40px;
   }
 }
-.repas__entrée--quatrechoix {
+.starter__four {
   height: 320px;
 }
 
 @media screen and (min-width: 1024px) {
-  .repas__entrée--quatrechoix {
+  .starter__four {
     height: 170px;
   }
 }

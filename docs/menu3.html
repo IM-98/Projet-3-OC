@@ -4,54 +4,291 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>menu3</title>
+    <link rel="stylesheet" href="style\index.css" type="text/css">
+    <title>A la francaise</title>
 </head>
 <body>
-    <p>
-     La note enchantée
+    <header>
+        <div class="header">
+            
+            <a href="index.html"><i class="fas fa-arrow-left return" aria-hidden="true"></i></a>
+            <img src="assets\ohmyfood.png" alt="logo" class="header__logo">
+        </div>
+    </header>
 
-        Entrées
-        Ravioles de foie gras 
-        Accompagnés de leur crème à la truffe
-        25€
+    <div class="band">
 
-        Caviar osciètre 
-        Sur blini à la farine de blé noir
-        35€
+        <img src="assets\resto3.jpg" alt="menu1" class="menu__band">    
 
-        Homard et espuma de potiron
-        Mariné aux zestes d'orange
-        20€
+        <div class="menu__title_band">
+            <h2 class="restaurant__title--menu">A la francaise</h2>
+            <input type="radio" id= "liked_menu1" class="liked__function">
+            <label for="liked_menu1" class="liked__checkbox--menu">
+                <i class="far fa-heart heart--empty menu__like" aria-hidden="true"></i>
+                <i class="fas fa-heart heart--full menu__like"></i></span> 
+            </label>
 
-        Foie gras de canard cuit entier
-        Confiture de figue et pain toasté
-        35€
+        </div>
+
+    </div>
+
+
+       
+
+
+
+<div class="menu__container">
+
+ <form class='menu__form'>
+
+   
+    <h3 class="menu__title">entrées<span class="menu__title--underline"></span></h3> 
+
+   
+    <fieldset class="menu__select">
+
+        
+        <div class="menu__starter__choice">
+
+            
+            <input type="radio" name='menu_a_la_française' id='entrée1' class='selection'>
+            <label for='entrée1' class='item__btn starter__one'>
+
                 
-        Plats
-        Noix de coquilles Saint-Jacques
-        Sur lit de purée de céleri-rave
-        40€
+                <span class="item__description">
+                    <span class='item__title' title="Tartare de poulpe acidulé">Tartare de poulpe acidulé</span>
+                    <span class='item__title' title="Aux zestes d'orange">Aux zestes d'orange</span>
+                </span>
+                <span class='item__price'>25€</span>
 
-        Langoustine poêlée
-        Purée de patate douce
-        35€
+                
+                <span class="item__selected">
+                    <i class="fas fa-check-circle item__selected--icon"></i>
+                </span>
+            </label>
+        </div>
 
-        Mijoté de queue de boeuf 
-        Et riz sauvage aux zestes de citron
-        44€
+        
+        <div class="menu__starter__choice">
 
-        Desserts
-        Macaron noisette et chocolat
-        Glace au caramel brun et sel de Guérande
-        18€
+           
+            <input type="radio" name='menu_a_la_française' id='entrée2' class='selection'>
+            <label for='entrée2' class='item__btn starter__two'>
 
-        Baba au rhum revisité 
-        Avec son coulis de citron
-        22€
+                
+                <span class="item__description">
+                    <span class='item__title' title="Velouté de légumes d'antan">Velouté de légumes d'antan</span>
+                    <span class='item__title' title="Carotte, panais, topinambour">Carotte, panais, topinambour</span>
+                </span>
+                <span class='item__price'>35€</span>
 
-        Tarte au citron meringuée 
-        Déstructurée
-        23€
-    </p>
+                
+                <span class="item__selected">
+                    <i class="fas fa-check-circle item__selected--icon"></i>
+                </span>
+            </label>
+        </div>
+
+        
+        <div class="menu__starter__choice">
+
+            
+            <input type="radio" name='menu_a_la_française' id='entrée3' class='selection'>
+            <label for='entrée3' class='item__btn starter__three'>
+
+                
+                <span class="item__description">
+                    <span class='item__title' title="Soupe à l'oignon">Soupe à l'oignon</span>
+                    <span class='item__title' title="Revisitée">Revisitée</span>
+                </span>
+                <span class='item__price'>20€</span>
+
+                
+                <span class="item__selected">
+                    <i class="fas fa-check-circle item__selected--icon"></i>
+                </span>
+            </label>
+        </div>
+
+    </fieldset>
+    
+    
+    <h3 class="menu__title">plats<span class="menu__title--underline"></span></h3>
+
+    
+    <fieldset class="menu__select">
+
+        
+        <div class="menu__plates__choice">
+
+            
+            <input type="radio" name='menu_a_la_française' id='plat1' class='selection'>
+            <label for='plat1' class='item__btn starter__one'>
+
+                
+                <span class="item__description">
+                    <span class='item__title' title="Coquilles Saint-Jacques">Coquilles Saint-Jacques</span>
+                    <span class='item__title' title="Accompagnées d'une purée de panais">Accompagnées d'une purée de panais</span>
+                </span>
+                <span class='item__price'>40€</span>
+
+                
+                <span class="item__selected">
+                    <i class="fas fa-check-circle item__selected--icon"></i>
+                </span>
+            </label>
+        </div>
+
+        
+        <div class="menu__plates__choice">
+
+            
+            <input type="radio" name='menu_a_la_française' id='plat2' class='selection'>
+            <label for='plat2' class='item__btn starter__two'>
+
+                
+                <span class="item__description">
+                    <span class='item__title' title="Magret de canard">Magret de canard</span>
+                    <span class='item__title' title="Et parmentier de pommes de terre">Et parmentier de pommes de terre</span>
+                </span>
+                <span class='item__price'>35€</span>
+
+                
+                <span class="item__selected">
+                    <i class="fas fa-check-circle item__selected--icon"></i>
+                </span>
+            </label>
+        </div>
+
+        
+        <div class="menu__plates__choice">
+
+            
+            <input type="radio" name='menu_a_la_française' id='plat3' class='selection'>
+            <label for='plat3' class='item__btn starter__three'>
+
+                
+                <span class="item__description">
+                    <span class='item__title' title="Pigeonneau d’Ille-et-Vilaine">Pigeonneau d’Ille-et-Vilaine</span>
+                    <span class='item__title' title="Sur son lit de gnocchis aux légumes">Sur son lit de gnocchis aux légumes</span>
+                </span>
+                <span class='item__price'>44€</span>
+
+                
+                <span class="item__selected">
+                    <i class="fas fa-check-circle item__selected--icon"></i>
+                </span>
+            </label>
+        </div>
+    </fieldset>
+
+    
+    <h3 class="menu__title">desserts<span class="menu__title--underline"></span></h3>
+
+    
+    <fieldset class='menu__select'>
+
+        
+        <div class="menu__dessert__choice">
+
+            
+            <input type="radio" name='menu_a_la_française' id='dessert1' class='selection'>
+            <label for='dessert1' class='item__btn starter__one'>
+
+                
+                <span class="item__description">
+                    <span class='item__title' title="Pétales de violettes glacés">Pétales de violettes glacés</span>
+                    <span class='item__title' title="Et purée de noisettes">Et purée de noisettes</span>
+                </span>
+                <span class='item__price'>18€</span>
+
+                
+                <span class="item__selected">
+                    <i class="fas fa-check-circle item__selected--icon"></i>
+                </span>
+            </label>
+        </div>
+
+        
+        <div class="menu__dessert__choice">
+
+            
+            <input type="radio" name='menu_a_la_française' id='dessert2' class='selection'>
+            <label for='dessert2' class='item__btn starter__two'>
+
+                
+                <span class="item__description">
+                    <span class='item__title' title="Fondant au chocolat">Fondant au chocolat</span>
+                    <span class='item__title' title="Revisité">Revisité</span>
+                </span>
+                <span class='item__price'>22€</span>
+
+                
+                <span class="item__selected">
+                    <i class="fas fa-check-circle item__selected--icon"></i>
+                </span>
+            </label>
+        </div>
+
+        
+        <div class="menu__dessert__choice">
+
+            
+            <input type="radio" name='menu_a_la_française' id='dessert3' class='selection'>
+            <label for='dessert3' class='item__btn starter__three'>
+
+                
+                <span class="item__description">
+                    <span class='item__title' title="Millefeuille croustillant">Millefeuille croustillant</span>
+                    <span class='item__title' title="Myrtilles et pâte d’amande">Myrtilles et pâte d’amande</span>
+                </span>
+                <span class='item__price'>23€</span>
+
+                
+                <span class="item__selected">
+                    <i class="fas fa-check-circle item__selected--icon"></i>
+                </span>
+            </label>
+        </div>
+    </fieldset>
+</form>
+    
+        <div class="menu__order_button">
+            <a href="#" class="menu__btn--gradient">Commander</a> 
+        </div>
+    </div>
+
+</p>   
+    <footer class='foot'>
+
+        <h4 class='footer__title'>ohmyfood</h4>
+
+        <ul class='pied__liste'>
+
+            <li class='pied__liste--element'>
+
+                <a href='#' class="links"><i class="fas fa-utensils lien__icone"></i>Proposer un restaurant</a>
+            </li>
+
+            <li class='pied__liste--element'>
+
+                <a href='#' class='links'><i class="fas fa-hands-helping lien__icone"></i>Devenir partenaire</a>
+            </li>
+
+            <li class='pied__liste--element'>
+
+                <a href='mentions-legales/mentions-legales-site-internet.pdf' class='links'>Mentions légales</a>
+            </li>
+
+            <li class='pied__liste--element'>
+
+        
+                <a href='mailto:contact@ohmyfood.fr' class='links'>Contact</a>
+            </li>
+        </ul>
+    </footer>
+        
+   
+<script src="https://kit.fontawesome.com/c1d244d3fe.js" crossorigin="anonymous" async></script>
 </body>
 </html>
