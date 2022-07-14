@@ -72,7 +72,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: done 0s 2s forwards;
+  animation: done 0s 2.8s forwards, fadeout 3s 1s ease-in-out;
 }
 
 .loader__logo {
@@ -86,7 +86,7 @@ html {
   font-size: 28px;
   width: 200px;
   height: 200px;
-  animation: done 0s 2s forwards;
+  animation: done 0s 2.8s forwards;
 }
 
 .loader__circle__container {
@@ -102,7 +102,7 @@ html {
   width: 200px;
   height: 200px;
   border-radius: 60%;
-  animation: spin 1s linear infinite, done 0s 2s forwards;
+  animation: spin 1s linear infinite, done 0s 2.8s forwards;
   box-shadow: 3px 3px 0px -2px white;
 }
 
@@ -131,12 +131,19 @@ html {
 }
 @keyframes done {
   0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+    height: 0%;
+  }
+}
+@keyframes fadeout {
+  0% {
     opacity: 1;
   }
   100% {
     opacity: 0;
-    width: 0%;
-    height: 0%;
   }
 }
 .header__logo {
