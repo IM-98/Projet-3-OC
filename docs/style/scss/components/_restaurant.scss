@@ -119,9 +119,15 @@ h3{
 
 
 @media screen and (min-width: 1024px) {
-     .restaurant__container {
+    .restaurant__container {
         margin: 0 15px 30px 15px;
-     }
+    }
+    
+    .restaurant__card{
+        width: 45%;
+    }
+
+
     .process__container{
         flex-flow: row  nowrap;
         margin: 0 15px;
