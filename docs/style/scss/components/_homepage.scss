@@ -39,7 +39,7 @@
     text-align: center;
 }
 .homepage__btn--gradient{
-   @include position(relative,40%,20%,-50%,50%);
+   @include position(absolute,50%,20%,-50%,50%);
    @extend %gradient_bg;
    border: 0px;
    padding:12px 20px;
