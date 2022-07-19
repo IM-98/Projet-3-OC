@@ -7,10 +7,14 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    padding-bottom: 15px;
 }
 .restaurant__card{
-    @extend %card
+    @extend %card;
+    
 }
+
+
 
 .restaurant__img{
     
@@ -62,8 +66,6 @@ input:checked + .liked__checkbox i {
     .heart--empty{
         color: transparent;
     }
-    // animation: progress 0.5s ease 0s;
-    
 }
 
 // 
@@ -123,10 +125,6 @@ h3{
     .process__container{
         flex-flow: row  nowrap;
         margin: 0 15px;
-    }
-
-    .restaurant__card{
-        width: 45%;
     }
 
     .process__btn{
