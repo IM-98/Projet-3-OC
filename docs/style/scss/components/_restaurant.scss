@@ -13,14 +13,14 @@
     @extend %card;
     
 }
-
+.restaurant__links{
+    width: 100%;
+}
 
 
 .restaurant__img{
     
         object-fit: cover;
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
         min-width: 109px;
         height: 130px ;
         width: 100%;
